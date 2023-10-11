@@ -1,0 +1,443 @@
+<mjml>
+  <mj-head>
+    <mj-title>Adidas Receipt</mj-title>
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-text font-family="Helvetica, sans-serif" color="#000000" />
+
+      <mj-class name="content-bg" background-color="#FFFFFF" />
+      <mj-class name="billing-header" align="left" font-size="14px" font-weight="600" line-height="18px" text-transform="uppercase" padding-left="50px" />
+      <mj-class name="billing-info" align="left" padding-top="5px" padding-left="50px" />
+      <mj-class name="grey-div" border-width="1.5px" padding="0px 30px 0px 30px" border-color="#AAAAAA" />
+      <mj-class name="menu-div" border-width="1.5px" padding="0px 50px 0px 50px" border-color="#AAAAAA" />
+      <mj-class name="menu-text" align="center" text-transform="uppercase" font-size="20px" font-weight="600" padding="15px 0px 15px 0px" />
+    </mj-attributes>
+
+    <mj-style>
+      .cancel-link {
+        color: #006DA4 !important;
+      }
+
+      .red-detail-info {
+        font-size: 13px;
+        font-weight: 300;
+        color: #ff0000;
+      }
+
+      .detail-info {
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      .footer-link {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 0 10px;
+      }
+
+      .footer-link:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+
+      .footer-menu {
+        color: #000000;
+        text-decoration: none;
+      }
+
+      .footer-menu:hover {
+        color: #ff0000;
+      }
+
+      @media (max-width:480px) {
+        .footer-link {
+          display: block;
+          font-size: 13px;
+          padding: 3px;
+        }
+
+        .bill-mobile {
+          padding-top: 30px;
+        }
+
+        .product-detail-mobile {
+          padding-bottom: 15px;
+        }
+
+        .payment-sum {
+          font-size: 13px
+        }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body mj-class="content-bg">
+    <!-- Start of Header Section w/Logo -->
+    <mj-section padding="15px 30px 15px 30px">
+      <mj-group>
+        <mj-column background-color="#000000">
+          <mj-text align="center" font-size="16px" font-weight="300" color="#FFFFFF" text-transform="uppercase" padding-top="15px" padding-bottom="15px">
+            <span style="font-weight:600">free shipping</span> on qualified orders*
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section mj-class="content-bg">
+      <mj-group>
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/tTpzwkbd/logo.jpg" href="https://www.adidas.com" alt="adidas logo" width="200px" padding-bottom="10px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End of Header Section w/Logo -->
+
+    <!-- Start of Thank You Section -->
+    <mj-wrapper padding="10px 50px 10px 50px">
+      <mj-section padding-top="30px" padding-bottom="20px" background-color="#E7EAEC">
+        <mj-group>
+          <mj-column>
+            <mj-text align="center" font-size="18px" font-weight="600">
+              Thank you for your order, Nick Magliano
+            </mj-text>
+            <mj-image src="https://i.postimg.cc/2jHx9nKv/tracking.png" alt="" width="250px" padding-top="25px" padding-bottom="22px" align="center" />
+            <mj-text align="center" line-height="18px" padding-left="40px" padding-right="40px">
+              Your order is being prepared. You'll receive another email once your order has shipped.
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+    <!-- End of Thank You Section -->
+
+    <!-- Start of Billing Info Section -->
+    <mj-section padding-top="15px">
+      <mj-group>
+        <mj-column>
+          <mj-text mj-class="billing-header">
+            Order Number
+          </mj-text>
+          <mj-text align="left" padding-top="5px" padding-left="50px">
+            65000500CUS
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text mj-class="billing-header">
+            Order Date
+          </mj-text>
+          <mj-text mj-class="billing-info">
+            10/9/2023
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding-top="30px">
+      <mj-group>
+        <mj-column>
+          <mj-text mj-class="billing-header">
+            Billing Info
+          </mj-text>
+          <mj-text mj-class="billing-info">
+            PayPal $64.10
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding-top="30px" padding-bottom="35px">
+      <mj-column>
+        <mj-text mj-class="billing-header">
+          Shipping Address
+        </mj-text>
+        <mj-text mj-class="billing-info">
+          Nick Magliano
+        </mj-text>
+        <mj-text mj-class="billing-info">
+          123 Norwood Lane
+        </mj-text>
+        <mj-text mj-class="billing-info">
+          Ringwood, NJ 07456
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text mj-class="billing-header">
+          <div class="bill-mobile">Billing Address</div>
+        </mj-text>
+        <mj-text mj-class="billing-info">
+          Nick Magliano
+        </mj-text>
+        <mj-text mj-class="billing-info">
+          123 Norwood Lane
+        </mj-text>
+        <mj-text mj-class="billing-info">
+          Ringwood, NJ 07456
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- End of Billing Info Section -->
+
+    <!-- Start of Cancel Section -->
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-text align="left" font-size="14px" padding-left="50px">
+            See an issue? <a class="cancel-link" href="https://www.adidas.com">Cancel your order</a>
+          </mj-text>
+          <mj-text align="left" font-size="10px" padding-left="50px" padding-top="5px">
+            Orders can be cancelled within 30 minutes of submission
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End of Cancel Section -->
+
+    <!-- Start Of Summary Section -->
+    <mj-section padding-top="60px" padding-bottom="25px">
+      <mj-group>
+        <mj-column>
+          <mj-text align="left" mj-class="billing-header">
+            Your Payment Summary
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding-left="50px">
+      <mj-group>
+        <mj-column>
+          <mj-text align="left" font-size="14px" text-transform="uppercase">
+            <div class="payment-sum">Shipping Total</div>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text align="right" font-size="14px" text-transform="uppercase" padding-right="50px">
+            <div class="payment-sum">$0.00</div>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-divider border-width="2px" padding="10px 50px 8px 50px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section padding-left="50px">
+      <mj-group>
+        <mj-column>
+          <mj-text font-size="14px" text-transform="uppercase">
+            <div class="payment-sum">15% off select styles</div>
+          </mj-text>
+        </mj-column>
+        <mj-column padding-right="50px">
+          <mj-text align="right" font-size="14px" text-transform="uppercase">
+            <span style="color:#ff0000;">Applied</span>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-divider border-width="2px" padding="10px 50px 8px 50px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding-left="50px">
+      <mj-group>
+        <mj-column>
+          <mj-text align="left" font-size="14px" text-transform="uppercase">
+            <div class="payment-sum">Taxes</div>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text align="right" font-size="14px" text-transform="uppercase" padding-right="50px">
+            <div class="payment-sum">$4.61</div>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-divider border-width="2px" padding="10px 50px 8px 50px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-text mj-class="billing-header">
+            <div class="payment-sum">Order Total</div>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text mj-class="billing-header" align="right" padding-right="50px">
+            <div class="payment-sum">$64.10</div>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End Of Summary Section -->
+
+    <!-- Start of Product Details Section -->
+    <mj-section padding-top="35px">
+      <mj-column>
+        <mj-text align="center" font-size="22px" font-weight="700">
+          Product Details
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="10px 50px 0px 50px">
+      <mj-group>
+        <mj-column>
+          <mj-image align="left" src="https://i.postimg.cc/k5xcTZ0X/shoe.png" alt="Adidas Continental 80 Shoe" width="200px" padding-top="15px" padding-left="25px" />
+        </mj-column>
+        <mj-column padding-left="15px">
+          <mj-text align="left" font-size="18px" font-weight="600" text-transform="uppercase" padding-top="45px">
+            Continental 80
+          </mj-text>
+          <mj-text font-size="14px" font-weight="600" text-transform="uppercase" padding-top="15px">
+            price: <span style="text-decoration:line-through;font-weight:300; font-size:13px;">$69.99</span>
+            <span class="red-detail-info">$59.99</span>
+          </mj-text>
+          <mj-text font-size="14px" font-weight="600" text-transform="uppercase" padding-top="15px">
+            color: <span class="detail-info">white</span>
+          </mj-text>
+          <mj-text font-size="14px" font-weight="600" text-transform="uppercase" padding-top="15px">
+            size: <span class="detail-info">M11W13</span>
+          </mj-text>
+          <mj-text font-size="14px" font-weight="600" text-transform="uppercase" padding-top="15px">
+            <div class="product-detail-mobile">quantity: <span class="detail-info">1</div></span>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-divider mj-class="grey-div" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End of Product Details Section -->
+
+    <!-- Start Of Order Details Section -->
+    <mj-section padding-top="40px" padding-bottom="30px">
+      <mj-group>
+        <mj-column>
+          <mj-button align="center" href="https://www.adidas.com" color="#FFFFFF" background-color="#000000" font-size="15px" font-weight="600" text-transform="uppercase" border-radius="0px" inner-padding="20px 30px 20px 30px">
+            view order details
+          </mj-button>
+          <mj-text align="center" font-size="14px" font-weight="600" padding="40px 0px 0px 0px">
+            Want to return in store?
+          </mj-text>
+          <mj-text align="center" font-size="14px" line-height="18px" padding="10px 30px 10px 30px">
+            Bring your merchandise to any Adidas Retail Store. Have an associate scan the barcode
+            for easy returns and order information.
+          </mj-text>
+          <mj-image src="https://i.postimg.cc/yNqjXBrb/barcode.png" alt="barcode for order" width="200px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End Of Order Details Section -->
+
+    <!-- Start Of Questions Section -->
+    <mj-wrapper padding="10px 50px 40px 50px">
+      <mj-section padding-top="30px" padding-bottom="30px" background-color="#E7EAEC">
+        <mj-group>
+          <mj-column>
+            <mj-text align="center" font-size="22px" font-weight="600" text-transform="uppercase">
+              Have Questions?
+            </mj-text>
+            <mj-button align="center" href="https://www.adidas.com" color="#FFFFFF" background-color="#000000" font-size="15px" font-weight="600" text-transform="uppercase" width="220px" border-radius="0px" inner-padding="18px 30px 18px 30px" padding="25px 0px 5px 0px">
+              Contact Us
+            </mj-button>
+            <mj-button align="center" href="https://www.adidas.com" color="#000000" background-color="transparent" border="1px solid #000000" font-size="15px" font-weight="600" text-transform="uppercase" border-radius="0px" width="220px" inner-padding="15px 25px 15px 25px">
+              faq's
+            </mj-button>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+    <!-- End Of Questions Section -->
+
+    <!-- Start Of Menu Section -->
+    <mj-section padding-bottom="30px">
+      <mj-group>
+        <mj-column>
+          <mj-divider padding="0px 50px 0px 50px" border-width="0.5px" border-color="#000000" />
+          <mj-text mj-class="menu-text">
+            <a class="footer-menu" href="https://www.adidas.com">women</a>
+          </mj-text>
+          <mj-divider mj-class="menu-div" />
+          <mj-text mj-class="menu-text">
+            <a class="footer-menu" href="https://www.adidas.com">men</a>
+          </mj-text>
+          <mj-divider mj-class="menu-div" />
+          <mj-text mj-class="menu-text">
+            <a class="footer-menu" href="https://www.adidas.com">kids</a>
+          </mj-text>
+          <mj-divider mj-class="menu-div" />
+          <mj-text mj-class="menu-text">
+            <a class="footer-menu" href="https://www.adidas.com">new arrivals</a>
+          </mj-text>
+          <mj-divider mj-class="menu-div" />
+          <mj-text mj-class="menu-text">
+            <a class="footer-menu" href="https://www.adidas.com">what's trending</a>
+          </mj-text>
+          <mj-divider mj-class="menu-div" />
+          <mj-text mj-class="menu-text">
+            <a class="footer-menu" href="https://www.adidas.com">sale</a>
+          </mj-text>
+          <mj-divider padding="0px 50px 0px 50px" border-width="0.5px" border-color="#000000" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- End Of Menu Section -->
+
+    <!-- Start Of Footer -->
+    <mj-wrapper padding="10px 30px 20px 30px">
+      <mj-section background-color="#000000" padding-bottom="22px">
+        <mj-group>
+          <mj-column>
+            <mj-social icon-size="30px" mode="horizontal" padding-top="10px">
+              <mj-social-element name="facebook" align="center" background-color="#000000" padding="10px"></mj-social-element>
+              <mj-social-element name="instagram" align="center" background-color="#000000" padding="10px"></mj-social-element>
+              <mj-social-element name="twitter" align="center" background-color="#000000" padding="10px"></mj-social-element>
+              <mj-social-element name="pinterest" align="center" background-color="#000000" padding="10px"></mj-social-element>
+            </mj-social>
+            <mj-text align="center" color="#FFFFFF" font-size="12px" padding-top="10px">
+              <a class="footer-link" href="https//www.adidas.com">Contact Us</a>
+              <a class="footer-link" href="https//www.adidas.com">Order Status</a>
+              <a class="footer-link" href="https//www.adidas.com">Update Your Preferences</a>
+              <a class="footer-link" href="https//www.adidas.com">Unsubscribe</a>
+            </mj-text>
+            <mj-text align="center" font-size="11px" color="#FFFFFF" padding-top="20px">
+              This order was sent by:
+            </mj-text>
+            <mj-text align="center" font-size="11px" color="#FFFFFF" padding-top="5px">
+              Adidas
+            </mj-text>
+            <mj-text align="center" font-size="11px" color="#FFFFFF" padding-top="5px">
+              5055 N Greeley Ave
+            </mj-text>
+            <mj-text align="center" font-size="11px" color="#FFFFFF" padding-top="5px">
+              Portland Oregon 97217
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" font-size="10px" line-height="12px" padding="0px 30px 30px 30px">
+          Free econonmy shipping on qualified orders. Otherwise, economy shipping is $7.99.
+          Shipping promotion is subject to change without notice. Please see site for more details.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- End Of Footer -->
+  </mj-body>
+</mjml>
